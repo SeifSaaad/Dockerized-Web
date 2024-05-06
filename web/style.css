@@ -1,0 +1,77 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    background-color: #e8e8e8;
+    
+}
+
+/* Section styles */
+.section {
+    position: relative;
+    padding: 100px 0;
+}
+
+.section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Team section */
+
+
+#our-team .container {
+    position: relative;
+}
+
+/* Add Member button */
+.add-member-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+  
+   .card-text {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #212121;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+  

@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  db:
+    build: 
+      context: ./mysql
+      dockerfile: Dockerfile
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+      
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
