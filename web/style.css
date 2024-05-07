@@ -1,15 +1,45 @@
+@font-face {
+    font-family: Coffee_Healing;
+    src: url(CoffeeHealing-1GrKe.ttf);
+}
+
+
+
+
 /* Global styles */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #212121;
-    background-color: #e8e8e8;
+    color:  rgb(0, 0, 0);
+    text-shadow: #212121;
+    background-image: url(black.png);
+    background-size: cover;
+    background-position: center;
     
 }
 
 /* Section styles */
 .section {
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
+    
+}
+
+
+#home{
+    
+    border: 1px dashed black;
+    background-image: url(aa9588469e19517c2b94b1addd15d11d-2987116107.gif);
+    background-position: center -280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 100px;
+    width: 1200px;
+
 }
 
 .section h1 {
@@ -26,8 +56,14 @@ body {
 /* Team section */
 
 
+
 #our-team .container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
 }
 
 /* Add Member button */
@@ -38,40 +74,71 @@ body {
     transform: translateX(-50%);
 }
 
+.model-dialog .model-body{
+
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+
+}
+
 .card {
-    height: 254px;
+    
     border-radius: 20px;
-    background: #f5f5f5;
+    background: transparent;
+    backdrop-filter: blur(20px);
     position: relative;
     padding: 1.8rem;
-    border: 2px solid #c3c6ce;
+    border: 1px solid black;
     transition: 0.5s ease-out;
     overflow: visible;
-   }
+    
+}
+
+.card .imggg{
+    
+    float: right;
+    width: 70px;
+    border-radius: 30px;
+
+}
+
+#nmmm{
+
+    font-family: Coffee_Healing;
+    font-size: x-large;
+
+}
+
+
+.card-details {
+color: white;
+height: 100%;
+gap: .5em;
+display: grid;
+place-content: center;
+}
+
+.card-text {
+color: white;
+}
+
+/*Text*/
+.card-title {
+font-size: 1.5em;
+font-weight: bold;
+color: #212121;
+}
+
+/*Hover*/
+.card:hover {
+border-color: #008bf8;
+backdrop-filter: blur(50px);
+box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
    
-   .card-details {
-    color: black;
-    height: 100%;
-    gap: .5em;
-    display: grid;
-    place-content: center;
-   }
-  
-   .card-text {
-    color: rgb(134, 134, 134);
-   }
-   
-   /*Text*/
-   .card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #212121;
-   }
-   
-   /*Hover*/
-   .card:hover {
-    border-color: #008bf8;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-   }
-   
-  
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: auto;
+        max-width: max-content;
+    }
+}
